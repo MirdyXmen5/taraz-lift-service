@@ -1,0 +1,185 @@
+<!DOCTYPE html><html lang="ru" style=""><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>Контакты - ТОО Taraz lift service</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "error": "#ba1a1a",
+                    "on-surface-variant": "#3d4949",
+                    "on-secondary-fixed-variant": "#474747",
+                    "primary-fixed": "#8cf3f3",
+                    "tertiary-container": "#737575",
+                    "secondary-fixed": "#e4e2e1",
+                    "outline": "#6d7979",
+                    "on-primary-container": "#f3fffe",
+                    "primary-fixed-dim": "#6fd7d6",
+                    "on-secondary": "#ffffff",
+                    "secondary": "#5f5e5e",
+                    "inverse-surface": "#2c3131",
+                    "on-primary-fixed": "#002020",
+                    "on-tertiary-fixed-variant": "#454747",
+                    "primary-container": "#008282",
+                    "on-surface": "#171d1c",
+                    "surface-tint": "#006a6a",
+                    "surface-container-low": "#f0f4f4",
+                    "secondary-container": "#e4e2e1",
+                    "tertiary-fixed": "#e2e2e2",
+                    "on-secondary-fixed": "#1b1c1c",
+                    "surface-container-lowest": "#ffffff",
+                    "on-primary-fixed-variant": "#004f4f",
+                    "outline-variant": "#bcc9c8",
+                    "error-container": "#ffdad6",
+                    "surface-container-high": "#e4e9e8",
+                    "on-error": "#ffffff",
+                    "tertiary-fixed-dim": "#c6c6c6",
+                    "surface-container": "#eaefee",
+                    "surface-container-highest": "#dfe3e3",
+                    "inverse-primary": "#6fd7d6",
+                    "tertiary": "#5b5c5c",
+                    "on-tertiary-container": "#fdfcfc",
+                    "on-error-container": "#93000a",
+                    "background": "#f6faf9",
+                    "on-tertiary-fixed": "#1a1c1c",
+                    "on-background": "#171d1c",
+                    "surface-dim": "#d6dbda",
+                    "surface-variant": "#dfe3e3",
+                    "inverse-on-surface": "#edf2f1",
+                    "on-secondary-container": "#656464",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "primary": "#006767",
+                    "secondary-fixed-dim": "#c8c6c6",
+                    "surface": "#f6faf9",
+                    "surface-bright": "#f6faf9"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "xl": "40px",
+                    "max-width": "1280px",
+                    "margin-mobile": "16px",
+                    "margin-desktop": "64px",
+                    "unit": "4px",
+                    "gutter": "24px",
+                    "sm": "8px",
+                    "md": "16px",
+                    "lg": "24px",
+                    "xs": "4px"
+            },
+            "fontFamily": {
+                    "headline-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg": ["Inter"],
+                    "label-md": ["Inter"],
+                    "display-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "caption": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "headline-lg-mobile": ["24px", {"lineHeight": "32px", "fontWeight": "700"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "caption": ["12px", {"lineHeight": "16px", "fontWeight": "400"}]
+            }
+          }
+        }
+      }
+    </script>
+<style>
+        body {
+            background-color: #f6faf9; /* background */
+            color: #171d1c; /* on-background */
+        }
+        .material-symbols-outlined {
+          font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .btn-primary {
+            background-color: #008B8B; /* Override for specific brand color mentioned in style guide */
+            color: #FFFFFF;
+        }
+        .btn-primary:hover {
+            background-color: #007a7a;
+        }
+        .input-field {
+            border: 1px solid #E0E0E0;
+        }
+        .input-field:focus {
+            border-color: #008B8B;
+            outline: none;
+            box-shadow: 0 0 0 1px #008B8B;
+        }
+        .card-border {
+            border: 1px solid #E0E0E0;
+        }
+    </style>
+</head>
+<body class="antialiased min-h-screen flex flex-col">
+    
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-max-width mx-auto">
+<div class="flex items-center gap-2">
+<!-- Using placeholder for brand image, or relying on text if no image provided in JSON. I'll use text for robustness as requested by JSON structure -->
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJg-AvRH7C6KAKO_kQvyPnAzd4d0xXfei0kKUll29KqpYE7gurW3mktor79-QVEwtgKwS-s0IezjlocRMGxtnyrUphg_ZmjmzArNLd74vCZ6CMsJKPUVnPlL5y9dx5CljfAFdTDzIMrvNbvpeba7VvmwRDqzjqbxnIrMd_9Keu4cemKQ-vDkkeip58bKZkHdjH4Pal6SBMQXzlEf73tF6cWZwgVt8VhOFLWLmkR1lWHEqfvGginFiUr-knVQ-f_XOO8xWn-ziTbko" alt="Taraz lift service" class="h-12 w-auto">
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">О нас</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200 " href="#">Услуги</a>
+<a class="text-primary border-b-2 border-primary font-bold pb-1 transition-colors duration-200" href="#">Контакты</a>
+</nav>
+<button class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-[#005c5c] transition-colors duration-200 shadow-sm">
+                Заказать звонок
+            </button>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Menu" class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+
+<!-- Main Content -->
+<main class="flex-grow w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop py-xl md:py-[80px]">
+<div class="mb-xl text-center">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-sm">Свяжитесь с нами</h1>
+<p class="font-body-lg text-body-lg text-secondary max-w-2xl mx-auto">Готовы обсудить ваш проект или требуется срочное сервисное обслуживание? Наши специалисты всегда на связи.</p>
+</div>
+<div class="grid grid-cols-1 gap-gutter"><div class="flex flex-col gap-gutter w-full max-w-2xl mx-auto"><div class="grid grid-cols-1 sm:grid-cols-2 gap-gutter"><div class="bg-surface-container-lowest p-lg rounded card-border flex flex-col gap-sm"><div class="flex items-center gap-sm text-primary mb-xs"><span class="material-symbols-outlined">location_on</span><h3 class="font-headline-md text-body-md font-bold text-on-surface">Адрес</h3></div><p class="font-body-md text-body-md text-secondary">г. Тараз<br>3 пер.Абдулина<br>дом 4</p></div><div class="bg-surface-container-lowest p-lg rounded card-border flex flex-col gap-sm"><div class="flex items-center gap-sm text-primary mb-xs"><span class="material-symbols-outlined">call</span><h3 class="font-headline-md text-body-md font-bold text-on-surface">Контакты</h3></div><p class="font-body-md text-body-md text-secondary mb-xs"><a class="hover:text-primary transition-colors" href="tel:+77771343431">+7 (777) 134-34-31</a><br><a class="hover:text-primary transition-colors" href="tel:+77262000000">+7 (7262) 00-00-00</a></p><div class="flex items-center gap-sm text-primary mt-2 mb-xs"><span class="material-symbols-outlined" style="font-size: 18px;">mail</span><a class="font-body-md text-body-md text-secondary hover:text-primary transition-colors" href="mailto:info@tarazlift.kz">info@tarazlift.kz</a></div></div></div><div class="bg-surface-container-lowest p-lg md:p-xl rounded card-border"><h2 class="font-headline-md text-headline-md text-on-surface mb-lg">Оставить заявку</h2><form class="flex flex-col gap-md"><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="name">Ваше имя</label><input class="input-field rounded px-4 py-3 w-full font-body-md text-body-md bg-white" id="name" name="name" placeholder="Иван Иванов" required="" type="text"></div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="phone">Номер телефона</label><input class="input-field rounded px-4 py-3 w-full font-body-md text-body-md bg-white" id="phone" name="phone" placeholder="+7 (___) ___-__-__" required="" type="tel"></div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="service">Интересующая услуга</label><select class="input-field rounded px-4 py-3 w-full font-body-md text-body-md bg-white text-on-surface-variant appearance-none" id="service" name="service"><option disabled="" selected="" value="">Выберите услугу</option><option value="installation">Монтаж лифтового оборудования</option><option value="maintenance">Сервисное обслуживание</option><option value="repair">Ремонт и модернизация</option><option value="consultation">Консультация</option></select></div><div class="flex flex-col gap-xs"><label class="font-label-md text-label-md text-on-surface" for="message">Дополнительная информация</label><textarea class="input-field rounded px-4 py-3 w-full font-body-md text-body-md bg-white resize-none" id="message" name="message" placeholder="Кратко опишите вашу задачу..." rows="4"></textarea></div><button class="btn-primary w-full py-4 rounded font-label-md text-label-md uppercase tracking-wider mt-sm transition-all shadow-sm" type="submit">Отправить заявку</button><p class="font-caption text-caption text-secondary text-center mt-xs">Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.</p></form></div></div></div>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-outline-variant w-full mt-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-margin-mobile md:px-margin-desktop py-xl max-w-max-width mx-auto">
+        <div class="col-span-1 md:col-span-1 flex flex-col items-start">
+            <div class="flex items-center gap-2 mb-md">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfajR7zvDAvZrCcoyEm5XetRWx4ffP0p6XbGQjp0Aa8ISJGuQXn8vfWoPwajpeWfXLna2LFv_kCLYw4Ch3SoQOBTdIOw3f610SBuMUYcNwc5yFXPMEfceF8EmWTWfCIQlDi1_REBnMgO6q6Y-VoFRMeYo3QjLC9Q7mXZcKSHLkGhIlpCsSiufxmtDFAd2tUvqYUXwZIQHI7CtOCnLN-W3IXfw7KEjEBthe-nqeRFWhAqC5X5BBLEQHhbqwRQXBsyDxErDho5rqsS8" alt="Logo" class="h-8 w-auto">
+                <span class="font-headline-md text-headline-md font-bold text-primary">Taraz lift service</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant opacity-90">
+                © 2026 ТОО Taraz lift service. Все права защищены.
+            </p>
+        </div>
+        <div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-lg gap-y-md md:justify-end items-center">
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">О нас</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Услуги</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Контакты</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>

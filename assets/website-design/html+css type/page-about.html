@@ -1,0 +1,234 @@
+<!DOCTYPE html><html class="light" lang="ru"><head>
+<meta charset="utf-8">
+<meta content="width=device-width, initial-scale=1.0" name="viewport">
+<title>О нас - ТОО Taraz lift service</title>
+<!-- Material Symbols -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&amp;display=swap" rel="stylesheet">
+<!-- Tailwind CSS -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<!-- Tailwind Config -->
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "error": "#ba1a1a",
+                        "on-surface-variant": "#3d4949",
+                        "on-secondary-fixed-variant": "#474747",
+                        "primary-fixed": "#8cf3f3",
+                        "tertiary-container": "#737575",
+                        "secondary-fixed": "#e4e2e1",
+                        "outline": "#6d7979",
+                        "on-primary-container": "#f3fffe",
+                        "primary-fixed-dim": "#6fd7d6",
+                        "on-secondary": "#ffffff",
+                        "secondary": "#5f5e5e",
+                        "inverse-surface": "#2c3131",
+                        "on-primary-fixed": "#002020",
+                        "on-tertiary-fixed-variant": "#454747",
+                        "primary-container": "#008282",
+                        "on-surface": "#171d1c",
+                        "surface-tint": "#006a6a",
+                        "surface-container-low": "#f0f4f4",
+                        "secondary-container": "#e4e2e1",
+                        "tertiary-fixed": "#e2e2e2",
+                        "on-secondary-fixed": "#1b1c1c",
+                        "surface-container-lowest": "#ffffff",
+                        "on-primary-fixed-variant": "#004f4f",
+                        "outline-variant": "#bcc9c8",
+                        "error-container": "#ffdad6",
+                        "surface-container-high": "#e4e9e8",
+                        "on-error": "#ffffff",
+                        "tertiary-fixed-dim": "#c6c6c6",
+                        "surface-container": "#eaefee",
+                        "surface-container-highest": "#dfe3e3",
+                        "inverse-primary": "#6fd7d6",
+                        "tertiary": "#5b5c5c",
+                        "on-tertiary-container": "#fdfcfc",
+                        "on-error-container": "#93000a",
+                        "background": "#f6faf9",
+                        "on-tertiary-fixed": "#1a1c1c",
+                        "on-background": "#171d1c",
+                        "surface-dim": "#d6dbda",
+                        "surface-variant": "#dfe3e3",
+                        "inverse-on-surface": "#edf2f1",
+                        "on-secondary-container": "#656464",
+                        "on-primary": "#ffffff",
+                        "on-tertiary": "#ffffff",
+                        "primary": "#006767",
+                        "secondary-fixed-dim": "#c8c6c6",
+                        "surface": "#f6faf9",
+                        "surface-bright": "#f6faf9"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0.125rem",
+                        "lg": "0.25rem",
+                        "xl": "0.5rem",
+                        "full": "0.75rem"
+                    },
+                    "spacing": {
+                        "xl": "40px",
+                        "max-width": "1280px",
+                        "margin-mobile": "16px",
+                        "margin-desktop": "64px",
+                        "unit": "4px",
+                        "gutter": "24px",
+                        "sm": "8px",
+                        "md": "16px",
+                        "lg": "24px",
+                        "xs": "4px"
+                    },
+                    "fontFamily": {
+                        "headline-md": ["Inter"],
+                        "headline-lg-mobile": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-lg": ["Inter"],
+                        "label-md": ["Inter"],
+                        "display-lg": ["Inter"],
+                        "body-lg": ["Inter"],
+                        "caption": ["Inter"]
+                    },
+                    "fontSize": {
+                        "headline-md": ["24px", { "lineHeight": "32px", "fontWeight": "600" }],
+                        "headline-lg-mobile": ["24px", { "lineHeight": "32px", "fontWeight": "700" }],
+                        "body-md": ["16px", { "lineHeight": "24px", "fontWeight": "400" }],
+                        "headline-lg": ["32px", { "lineHeight": "40px", "fontWeight": "700" }],
+                        "label-md": ["14px", { "lineHeight": "20px", "letterSpacing": "0.05em", "fontWeight": "600" }],
+                        "display-lg": ["48px", { "lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700" }],
+                        "body-lg": ["18px", { "lineHeight": "28px", "fontWeight": "400" }],
+                        "caption": ["12px", { "lineHeight": "16px", "fontWeight": "400" }]
+                    }
+                }
+            }
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-background font-body-md antialiased min-h-screen flex flex-col">
+    
+<!-- TopNavBar -->
+<header class="bg-surface border-b border-outline-variant sticky top-0 z-50 w-full">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-md max-w-max-width mx-auto">
+<div class="flex items-center gap-2">
+<!-- Using placeholder for brand image, or relying on text if no image provided in JSON. I'll use text for robustness as requested by JSON structure -->
+<img src="https://lh3.googleusercontent.com/aida-public/AB6AXuAJg-AvRH7C6KAKO_kQvyPnAzd4d0xXfei0kKUll29KqpYE7gurW3mktor79-QVEwtgKwS-s0IezjlocRMGxtnyrUphg_ZmjmzArNLd74vCZ6CMsJKPUVnPlL5y9dx5CljfAFdTDzIMrvNbvpeba7VvmwRDqzjqbxnIrMd_9Keu4cemKQ-vDkkeip58bKZkHdjH4Pal6SBMQXzlEf73tF6cWZwgVt8VhOFLWLmkR1lWHEqfvGginFiUr-knVQ-f_XOO8xWn-ziTbko" alt="Taraz lift service" class="h-12 w-auto">
+</div>
+<nav class="hidden md:flex items-center gap-lg">
+<a class="text-primary border-b-2 border-primary font-bold pb-1 transition-colors duration-200 " href="#">О нас</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Услуги</a>
+<a class="text-secondary hover:text-primary transition-colors duration-200" href="#">Контакты</a>
+</nav>
+<button class="hidden md:inline-flex items-center justify-center bg-primary text-on-primary px-6 py-2 rounded font-label-md hover:bg-[#005c5c] transition-colors duration-200 shadow-sm">
+                Заказать звонок
+            </button>
+<!-- Mobile Menu Toggle -->
+<button aria-label="Menu" class="md:hidden p-2 text-on-surface">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</header>
+
+<!-- Main Content Canvas -->
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[60vh] min-h-[400px] flex items-center justify-start bg-surface-container-highest border-b border-outline-variant">
+<div class="absolute inset-0 bg-cover bg-center opacity-40 mix-blend-multiply" data-alt="A wide-angle architectural photograph of a highly modern corporate elevator lobby situated in a premium business center in Kazakhstan. The scene features sleek brushed stainless steel elevator doors reflecting bright, cool-toned ambient light. Subtle teal glowing accents, reminiscent of hex color #008B8B, trace the edges of the digital floor indicator displays. The overall atmosphere is pristine, highly engineered, and conveys an absolute sense of safety, reliability, and cutting-edge vertical transportation technology. The composition is structured with clean, straight vertical lines." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCQYkMWcRFJTTCAcFapAasWBaGlmPiniRdJ-FIZOoyUuNbIdnLNBEa4U84Bk325TCUbBfRgjCffZPXoRdsO5mfRGMfSPm8_22mQaVLa9M2c5MBrcJyQ1rF2ZpXxxGE744dJntcSXXEzrw-5HFUfNlBdNA9U1MTF6-lM7gO0HfX4TsT1h0jhd3c-HVxZ8PXQV2Bd6vAsUKi6SbYG0LF6F8GS44x7GLwy7iJ4CJR-SyKLcLqk93tIN65dVS1FQg1a4sk5nCdNGckyKhU')"></div>
+<div class="relative z-10 w-full max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<div class="max-w-2xl bg-surface-container-lowest/90 backdrop-blur-sm p-lg border border-outline-variant rounded-DEFAULT">
+<h1 class="font-display-lg text-display-lg text-on-surface mb-md">Надежность на каждом этаже</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-lg">Мы создаем и обслуживаем безопасные лифтовые системы для современного Казахстана, объединяя инженерную точность и передовые технологии.</p>
+<button class="bg-primary text-on-primary font-label-md text-label-md px-lg py-md rounded-DEFAULT hover:bg-surface-tint transition-all border border-transparent">
+                        Связаться с нами
+                    </button>
+</div>
+</div>
+</section>
+<!-- History & Experience -->
+<section class="w-full py-xl md:py-[80px] px-margin-mobile md:px-margin-desktop max-w-max-width mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-xl items-center">
+<div>
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-md">История и Опыт</h2>
+<p class="font-body-md text-body-md text-on-surface-variant mb-md">
+                        ТОО "Taraz lift service" было основано с миссией обеспечить безопасный и бесперебойный вертикальный транспорт в жилых и коммерческих зданиях. За годы работы мы собрали команду высококвалифицированных экспертов, способных решать технические задачи любой сложности.
+                    </p>
+<p class="font-body-md text-body-md text-on-surface-variant mb-lg">
+                        Наша компания специализируется на монтаже, модернизации и сервисном обслуживании лифтового оборудования. Мы строго соблюдаем международные и государственные стандарты безопасности, гарантируя долговечность каждого установленного механизма.
+                    </p>
+<div class="grid grid-cols-2 gap-md border-t border-outline-variant pt-lg">
+<div>
+<span class="block font-headline-md text-headline-md text-primary mb-xs">500+</span>
+<span class="block font-label-md text-label-md text-secondary">Реализованных проектов</span>
+</div>
+<div>
+<span class="block font-headline-md text-headline-md text-primary mb-xs">10+</span>
+<span class="block font-label-md text-label-md text-secondary">Лет на рынке</span>
+</div>
+</div>
+</div>
+<div class="relative h-full min-h-[400px] border border-outline-variant rounded-DEFAULT overflow-hidden bg-surface-container">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="A detailed, high-contrast close-up shot focusing on the intricate mechanical gears and heavy-duty steel tension cables of a modern elevator system's hoisting mechanism. The industrial setting is clean and well-maintained, bathed in sharp, directional white light that highlights the precision engineering and robust construction of the components. A subtle cool gray and teal color grading permeates the scene, reinforcing a corporate identity built on technical expertise, structural stability, and uncompromising industrial safety standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBS66RTuLxnsbuGxJ2Gbf5hy-lJaT1-9cy8lIdgzTHuvTv2gX9sMCFPJEKpFx66o7euz4igaFHr1Tx6-3SAVlUuHVj5QGYc8RsmOFXeXO3_ArJCB9oPjFMhkJQQymtjkzhojPrqH_qLbdbbXJ6IjW-499aWnTmrP-pchmpMERuO1_P1s5U9q6I-kMUhiS4bel8JZmbH4B4_Bcc5aAT0m7D-7bGxYSeKL-qyK0mkiVuNufsnOBGO0VCrsbCoCuVDrTl4qR7CHN5bKHM">
+</div>
+</div>
+</section>
+<!-- Core Values (Bento Grid) -->
+<section class="w-full py-xl md:py-[80px] bg-surface-container-low border-y border-outline-variant">
+<div class="max-w-max-width mx-auto px-margin-mobile md:px-margin-desktop">
+<h2 class="font-headline-lg text-headline-lg text-on-surface mb-xl text-center md:text-left">Наши Принципы</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Value 1 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT p-lg md:col-span-2">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-full mb-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">security</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Безопасность превыше всего</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Каждый проект проходит многоуровневый контроль качества. Мы не идем на компромиссы, когда дело касается жизни и здоровья пассажиров. Наши системы оснащены передовыми механизмами аварийного торможения.</p>
+</div>
+<!-- Value 2 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT p-lg">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-full mb-md">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">verified</span>
+</div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Высшее Качество</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Мы сотрудничаем только с проверенными производителями и используем износостойкие материалы, обеспечивая долговечность эксплуатации.</p>
+</div>
+<!-- Value 3 -->
+<div class="bg-surface-container-lowest border border-outline-variant rounded-DEFAULT p-lg md:col-span-3 flex flex-col md:flex-row items-start md:items-center gap-lg">
+<div class="w-12 h-12 bg-primary-container/10 flex items-center justify-center rounded-full shrink-0">
+<span class="material-symbols-outlined text-primary" style="font-variation-settings: 'FILL' 1;">lightbulb</span>
+</div>
+<div>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-sm">Инновации в управлении</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Внедрение умных систем диспетчеризации и энергосберегающих технологий позволяет нам оптимизировать работу лифтов и снижать затраты на электроэнергию для наших клиентов.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-surface-container-highest border-t border-outline-variant w-full mt-auto">
+    <div class="grid grid-cols-1 md:grid-cols-4 gap-gutter w-full px-margin-mobile md:px-margin-desktop py-xl max-w-max-width mx-auto">
+        <div class="col-span-1 md:col-span-1 flex flex-col items-start">
+            <div class="flex items-center gap-2 mb-md">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDfajR7zvDAvZrCcoyEm5XetRWx4ffP0p6XbGQjp0Aa8ISJGuQXn8vfWoPwajpeWfXLna2LFv_kCLYw4Ch3SoQOBTdIOw3f610SBuMUYcNwc5yFXPMEfceF8EmWTWfCIQlDi1_REBnMgO6q6Y-VoFRMeYo3QjLC9Q7mXZcKSHLkGhIlpCsSiufxmtDFAd2tUvqYUXwZIQHI7CtOCnLN-W3IXfw7KEjEBthe-nqeRFWhAqC5X5BBLEQHhbqwRQXBsyDxErDho5rqsS8" alt="Logo" class="h-8 w-auto">
+                <span class="font-headline-md text-headline-md font-bold text-primary">Taraz lift service</span>
+            </div>
+            <p class="font-body-md text-body-md text-on-surface-variant opacity-90">
+                © 2026 ТОО Taraz lift service. Все права защищены.
+            </p>
+        </div>
+        <div class="col-span-1 md:col-span-3 flex flex-wrap gap-x-lg gap-y-md md:justify-end items-center">
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">О нас</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Услуги</a>
+            <a class="font-body-md text-body-md text-on-surface-variant hover:text-primary hover:underline transition-all opacity-90 hover:opacity-100" href="#">Контакты</a>
+        </div>
+    </div>
+</footer>
+</body></html>
