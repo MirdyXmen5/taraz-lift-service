@@ -77,13 +77,7 @@ export default function Services() {
             {t.services.partners.map(([name, text], index) => (
               <article key={name} className="rounded-lg border border-outline-variant bg-surface-container-lowest p-6 text-center">
                 <div className="mb-5 flex h-24 items-center justify-center">
-                  {partnerLogos[index] ? (
-                    <img src={partnerLogos[index]} alt={name} className="max-h-full max-w-[180px] object-contain" />
-                  ) : (
-                    <div className="flex h-20 w-36 items-center justify-center rounded border border-dashed border-outline text-sm font-bold text-secondary">
-                      LOGO LUCH
-                    </div>
-                  )}
+                  <img src={partnerLogos[index]} alt={name} className="max-h-full max-w-[180px] object-contain" />
                 </div>
                 <h3 className="text-lg font-bold text-on-surface">{name}</h3>
                 <p className="mt-3 text-sm leading-6 text-on-surface-variant">{text}</p>
