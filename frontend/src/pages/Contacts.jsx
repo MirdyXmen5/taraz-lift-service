@@ -5,7 +5,7 @@ import AnimatedSection from "../components/AnimatedSection.jsx";
 import DiagonalBackground from "../components/DiagonalBackground.jsx";
 import { useLanguage } from "../data/i18n.jsx";
 
-const initialForm = { name: "", phone: "", service: "", message: "" };
+const initialForm = { name: "", address: "", phone: "", service: "", message: "" };
 
 export default function Contacts() {
   const { language, t, webhookUrl } = useLanguage();
@@ -73,6 +73,7 @@ export default function Contacts() {
             <h2 className="mb-6 text-2xl font-semibold text-on-surface">{t.contacts.formTitle}</h2>
             <form className="flex flex-col gap-5" onSubmit={submitForm}>
               <Field label={t.contacts.name} name="name" value={form.name} onChange={updateField} placeholder={t.contacts.placeholders.name} required />
+              <Field label={t.contacts.address} name="address" value={form.address} onChange={updateField} placeholder={t.contacts.placeholders.address} required />
               <Field label={t.contacts.phone} name="phone" type="tel" value={form.phone} onChange={updateField} placeholder={t.contacts.placeholders.phone} required />
               <label className="flex flex-col gap-2">
                 <span className="text-sm font-semibold uppercase tracking-[0.08em] text-on-surface">{t.contacts.service}</span>

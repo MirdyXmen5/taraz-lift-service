@@ -1,10 +1,11 @@
-import { ArrowRight, Lightbulb, ShieldCheck, Verified } from "lucide-react";
+import { ArrowRight, ExternalLink, FileText, Lightbulb, ShieldCheck, Verified } from "lucide-react";
 import { Link } from "react-router-dom";
 import AnimatedSection from "../components/AnimatedSection.jsx";
 import DiagonalBackground from "../components/DiagonalBackground.jsx";
 import ParallaxPanel from "../components/ParallaxPanel.jsx";
 import { elevatorImages } from "../data/assets.js";
 import { useLanguage } from "../data/i18n.jsx";
+import licensePdf from "../assets/docs/license.pdf";
 
 const valueIcons = [ShieldCheck, Verified, Lightbulb];
 
@@ -55,7 +56,7 @@ export default function About() {
                 return (
                   <article
                     key={title}
-                    className={`rounded-lg border border-outline-variant bg-surface-container-lowest p-6 ${index === 0 ? "md:col-span-2" : ""} ${index === 2 ? "md:col-span-3" : ""}`}
+                    className={`rounded-lg border border-outline-variant bg-surface-container-lowest p-6 ${index === 0 || index === 2 ? "md:col-span-2" : ""}`}
                   >
                     <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
                       <Icon size={26} />
@@ -65,6 +66,23 @@ export default function About() {
                   </article>
                 );
               })}
+              <a
+                href={licensePdf}
+                target="_blank"
+                rel="noreferrer"
+                className="group rounded-lg border border-outline-variant bg-surface-container-lowest p-6 transition hover:-translate-y-0.5 hover:border-primary/50 hover:shadow-soft"
+              >
+                <div className="mb-5 flex h-12 w-12 items-center justify-center rounded-full bg-primary/10 text-primary">
+                  <FileText size={26} />
+                </div>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <h3 className="text-2xl font-semibold text-on-surface">Лицензия компании</h3>
+                    <p className="mt-3 leading-7 text-on-surface-variant">Ознакомьтесь с официальным документом компании в формате PDF.</p>
+                  </div>
+                  <ExternalLink className="mt-1 shrink-0 text-primary transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5" size={20} />
+                </div>
+              </a>
             </div>
           </AnimatedSection>
         </div>

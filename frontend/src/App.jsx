@@ -1,6 +1,7 @@
 import { Outlet } from "react-router-dom";
 import Header from "./components/Header.jsx";
 import Footer from "./components/Footer.jsx";
+import WhatsAppButton from "./components/WhatsAppButton.jsx";
 import { LanguageProvider } from "./data/i18n.jsx";
 
 export default function App() {
@@ -12,6 +13,7 @@ export default function App() {
           <Outlet />
         </main>
         <Footer />
+        <WhatsAppButton />
       </div>
     </LanguageProvider>
   );

@@ -1,6 +1,6 @@
 import { createContext, useContext, useEffect, useMemo, useState } from "react";
 
-const WEBHOOK_URL = "https://n8n.miras-projects-cv.asia/webhook-test/2565f62b-bf63-468b-ab49-90bbe5998335";
+const WEBHOOK_URL = "https://n8n.miras-projects-cv.asia/webhook/17e24184-f582-4d05-bf7f-f6a2469293a1";
 
 const dictionaries = {
   kk: {
@@ -53,12 +53,13 @@ const dictionaries = {
       contacts: "Байланыстар",
       formTitle: "Өтінім қалдыру",
       name: "Атыңыз",
+      address: "Мекенжайыңыз",
       phone: "Телефон нөмірі",
       service: "Қажетті қызмет",
       message: "Қосымша ақпарат",
       submit: "Өтінімді жіберу",
       consent: "Батырманы басу арқылы құпиялылық саясатымен келісесіз.",
-      placeholders: { name: "Атыңызды енгізіңіз", phone: "+7 (___) ___-__-__", message: "Міндетіңізді қысқаша сипаттаңыз..." },
+      placeholders: { name: "Атыңызды енгізіңіз", address: "Мекенжайыңызды енгізіңіз", phone: "+7 (___) ___-__-__", message: "Міндетіңізді қысқаша сипаттаңыз..." },
       select: "Қызметті таңдаңыз",
       success: "Өтінім жіберілді. Жақын арада хабарласамыз.",
       error: "Жіберу мүмкін болмады. Кейінірек қайталап көріңіз."
@@ -114,12 +115,13 @@ const dictionaries = {
       contacts: "Контакты",
       formTitle: "Оставить заявку",
       name: "Ваше имя",
+      address: "Ваш адрес",
       phone: "Номер телефона",
       service: "Интересующая услуга",
       message: "Дополнительная информация",
       submit: "Отправить заявку",
       consent: "Нажимая кнопку, вы соглашаетесь с политикой конфиденциальности.",
-      placeholders: { name: "Иван Иванов", phone: "+7 (___) ___-__-__", message: "Кратко опишите вашу задачу..." },
+      placeholders: { name: "Иван Иванов", address: "г. Тараз, ул. Абдулина, д. 4", phone: "+7 (___) ___-__-__", message: "Кратко опишите вашу задачу..." },
       select: "Выберите услугу",
       success: "Заявка отправлена. Мы скоро свяжемся с вами.",
       error: "Не удалось отправить заявку. Попробуйте позже."
