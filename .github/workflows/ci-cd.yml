@@ -1,0 +1,43 @@
+name: Backend CI Pipeline
+
+# 1. Когда запускать пайплайн?
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+# 2. Что именно делать?
+jobs:
+  build-and-test:
+    runs-on: ubuntu-latest # Берем бесплатный сервер от GitHub
+
+    steps:
+    # Шаг 1: Клонируем твой код на сервер GitHub
+    - name: Checkout code
+      uses: actions/checkout@v4
+
+    # Шаг 2: Устанавливаем Python
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13.14' # Укажи свою версию
+        cache: 'pip' # Кэшируем пакеты, чтобы пайплайн работал быстрее
+
+    # Шаг 3: Ставим зависимости проекта
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install flake8 pytest
+        if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
+
+    # Шаг 4: Проверяем код на ошибки синтаксиса (Линтер)
+    - name: Lint with flake8
+      run: |
+        # Остановит пайплайн, если есть фатальные ошибки
+        flake8 . --count --select=E9,F63,F7,F82 --show-source --statistics
+
+    # Шаг 5: Запускаем автотесты
+    - name: Run tests with pytest
+      run: |
+        pytest
