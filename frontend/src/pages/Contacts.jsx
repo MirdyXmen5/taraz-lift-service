@@ -36,7 +36,7 @@ export default function Contacts() {
       setForm(initialForm);
       setStatus("success");
       setNotice(t.contacts.success);
-    } catch (error) {
+    } catch {
       setStatus("error");
       setNotice(t.contacts.error);
     }
@@ -53,7 +53,7 @@ export default function Contacts() {
 
         <div className="mx-auto grid max-w-3xl grid-cols-1 gap-6">
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <InfoCard icon={MapPin} title={t.contacts.address} text={t.contacts.addressText} />
+            <InfoCard icon={MapPin} title={t.contacts.addressTitle} text={t.contacts.addressText} />
             <article className="rounded-lg border border-outline-variant bg-surface-container-lowest p-6">
               <div className="mb-3 flex items-center gap-2 text-primary">
                 <Phone size={22} />
