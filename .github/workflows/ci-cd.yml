@@ -100,6 +100,6 @@ jobs:
             username: root
             key: ${{ secrets.SSH_PRIVATE_KEY }}
             script: |
-              cd /path/to/your/project # УКАЖИ ТУТ РЕАЛЬНЫЙ ПУТЬ ДО ТВОЕГО DOCKER-COMPOSE НА СЕРВЕРЕ
+              cd ~/ # УКАЖИ ТУТ РЕАЛЬНЫЙ ПУТЬ ДО ТВОЕГО DOCKER-COMPOSE НА СЕРВЕРЕ
               docker compose pull
               docker compose up -d --remove-orphans
